@@ -1,0 +1,36 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" id="site_nav">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='images/gscom_logo.jpg') }}" height=25px alt="GSCom Logo"></a>
+    </div><!-- end navbar-header -->
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('business') }}">Business</a></li>
+        <li><a href="{{ url_for('products') }}">Products</a></li>
+        <!-- DROPDOWN MENU Consulting -->
+        <li role="presentation" class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">White Papers <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ url_for('whitepaper', whitepaper = 'AGC_Design.pdf') }}">1. AGC Design</a></li>
+            <li><a href="{{ url_for('whitepaper', whitepaper = 'Broadband_wireless_1024-QAM_Modem.pdf') }}">2. Broadband Wireless Modem</a></li>
+            <li><a href="{{ url_for('whitepaper', whitepaper = 'DFE_and_Carrier_Recovery.pdf') }}">3. DFE and Carrier Recovery</a></li>
+            <li><a href="{{ url_for('whitepaper', whitepaper = 'LDPC_System_Design.pdf') }}">4. LDPC System Design</a></li>
+            <li><a href="{{ url_for('whitepaper', whitepaper = 'Mapper.pdf') }}">5. Mapper</a></li>
+            <li><a href="{{ url_for('whitepaper', whitepaper = 'Project_Budget.pdf') }}">6. Project Budget</a></li>
+            <li><a href="{{ url_for('whitepaper', whitepaper = 'Business_Proposal.pdf') }}">7. Business Proposal</a></li>
+            <li><a href="{{ url_for('whitepaper', whitepaper = 'Business_Development.pdf') }}">8. Business Development</a></li>
+          </ul><!-- end dropdown-menu -->
+        </li><!-- end DROPDOWN MENU Consulting -->
+        <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+      </ul><!-- end nav navbar-nav -->
+    </div><!--/.nav-collapse -->
+  </div><!-- end container -->
+</nav>

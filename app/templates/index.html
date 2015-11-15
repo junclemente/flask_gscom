@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% set active_page = "index" %}
+
+{% block title %}
+  GScom Webpage
+{% endblock %}
+
+{% block content %}
+  <div class="jumbotron">
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/gscom_logo.jpg') }}" height=150px class="pull-left" alt="GScom Logo" id="jumbotron_logo">
+        <p class="lead">GScom is at the forefront of wireless communication technology development, providing our customers with system solutions and consulting services for leading-edge communication systems that are the basis of our daily life.</p>
+    </div><!-- end container -->
+  </div><!-- end jumbotron -->
+
+  <div class="container text-justify">
+    <p class="lead">GScom’s innovative technology leadership combined with our innovative design services experience, enables our customers the ability to rapidly and effectively innovate, differentiate and win in their markets.</p>
+    <p class="lead">GScom has available a broadband wireless 1024-QAM modem for Gigabit data communication providing a broad spectrum of wireless communication core technologies and intellectual properties.</p>
+
+  </div><!-- / container -->
+
+  <div class="container">
+    <div id="index-carousel" class="carousel slide" data-ride="carousel">
+      <!-- indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#index-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#index-carousel" data-slide-to="1"></li>
+      </ol>
+      <!-- indicators -->
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active" id="i-slide1">
+        </div><!-- / item active -->
+        <div class="item" id="i-slide2">
+        </div><!-- / item -->
+      </div><!-- / carousel-inner -->
+    <!-- / wrapper for slides -->
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#index-carousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#index-carousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!-- / Controls-->
+    </div><!-- / business-carousel -->
+  </div><!-- / container -->
+
+  <div class="container text-justify">
+
+    <p>GScom’s wireless communication core technologies and 1024-QAM modem address a wide variety of system-level challenges in wireless communications, including performance with very high speed (up to Gigabit speed) data communication in a broadband spectrum ranging from cellular band frequencies up to microwave or millimeter wave band frequencies.</p>
+    <p>GScom’s wireless 1024-QAM modem yields the most reliable and the best performance in a broadband wireless backhaul communication channel in the small cell or macro cell communication network systems.</p>
+  </div><!-- container -->
+{% endblock %}

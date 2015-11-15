@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}
+  White Paper: {{ whitepaper }}
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <embed src="../static/whitepapers/{{ whitepaper }}" width=800 height=500 alt="AGC Design" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+  </div><!-- container -->
+{% endblock %}

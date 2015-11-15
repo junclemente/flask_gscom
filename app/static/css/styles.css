@@ -1,0 +1,67 @@
+body {
+  padding-top: 60px;
+  background: #fff;
+}
+
+/* ID */
+#business_image_right {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  min-height: 100px;
+}
+
+#jumbotron_logo {
+  padding-top: 0px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+}
+
+/* Class */
+.jumbotron {
+  background: #000033;
+  color: white;
+}
+
+.navbar {
+  background: #000;
+}
+
+/* Carousel */
+#business-carousel {
+ margin-bottom: 20px;
+}
+
+#business-carousel .item {
+ height: 350px;
+}
+
+#b-slide1 {
+ background: url('../images/backhaul_1.png') center center no-repeat;
+}
+
+#b-slide2 {
+ background: url('../images/backhaul_2.png') center center no-repeat;
+}
+
+#b-slide3 {
+  background: url('../images/backhaul_3.png') center center no-repeat;
+}
+
+#index-carousel {
+  margin-bottom: 20px;
+}
+
+#index-carousel .item {
+  height: 350px;
+}
+
+#i-slide1 {
+  background: url('../images/network_1.png') center center no-repeat;
+}
+
+#i-slide2 {
+  background: url('../images/network_2.png') center center no-repeat;
+}
