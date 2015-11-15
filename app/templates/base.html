@@ -27,7 +27,7 @@
 
   <body>
     {% include 'navigation.html' %}
-
+    {% set active_page = active_page|default('index') -%}
     {% block content %}
     {% endblock %}
 
