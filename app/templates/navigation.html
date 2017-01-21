@@ -39,7 +39,8 @@
             %}
             {% for name, file in whitepaper_list %}
 
-              <li><a href="{{ url_for( 'whitepaper', whitepaper=file ) }}">{{ loop.index }}. {{ name }}</a></li>
+              <li class="hidden_mobile"><a href="{{ url_for( 'whitepaper', whitepaper=file ) }}">{{ loop.index }}. {{ name }}</a></li>
+              <li class="hidden_desktop"><a href="../static/whitepapers/{{ file }}" target="_blank">{{ loop.index }}. {{ name }}</a></li>
 
             {% endfor %}
           </ul><!-- end dropdown-menu -->
