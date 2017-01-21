@@ -41,7 +41,7 @@
                     <li>Mother code rates of 0.5 and 0.75.</li>
                     <li>Achievement of 8~10 dB coding gain with a code length of 8640 and a code rate of 0.5 in the reasonable SNR ranges for data communication.</li>
                   </ul>
-                <h4><a href="{{ url_for('whitepaper', whitepaper = 'LDPC_System_Design.pdf') }}" target="_blank">White Paper: LDPC Algorithm &amp; System Design</a></h4>
+                <h4><a href="{{ url_for('whitepaper', whitepaper = 'LDPC System Design.pdf') }}" target="_blank">White Paper: LDPC Algorithm &amp; System Design</a></h4>
               <li><h3>Mapper / De-mapper (Slicer)</h3></li>
                   <p>The Mapper takes the coded bit stream at the output of the (LDPC) encoder and maps each group of m bits into one of the M) = 2^m) signal constellations. The De-mapper receives the demodulated symbols from the demodulator and converts the received symbols into the soft decision values of the corresponding bit stream through a soft decision decoding process.</p>
                   <ul>
@@ -54,7 +54,7 @@
               <li><h3>Equalizer combined with carrier recovery</h3></li>
                 <p>Fading, inter-symbol interference, time varying channel characteristics, large dynamic range of signal to noise ratio (SNR), etc, are major signal impairment factors in the broadband wireless communication systems. Phase noise is also one of the most critical signal impairment factors in wireless communication systems which use high carrier frequencies with high-order M-QAM such as 256-QAM or 1024-QAM modulation technologies.</p>
                 <p>GScom has developed an advanced fractionally spaced Decision Feedback Equalizer (DFE) which is combined with a carrier recovery circuit. The carrier recovery combined with the DFE is a powerful solution to fight against phase noise through the latency reduction between phase noise estimation and correction.</p>
-                  <h4><a href="{{ url_for('whitepaper', whitepaper = 'DFE_and_Carrier_Recovery.pdf') }}" target="_blank">White Paper: Decision Feedback Equalizer (DFE) combined with Carrier Recovery</a></h4>
+                  <h4><a href="{{ url_for('whitepaper', whitepaper = 'DFE and Carrier Recovery.pdf') }}" target="_blank">White Paper: Decision Feedback Equalizer (DFE) combined with Carrier Recovery</a></h4>
 
             <li><h3>Time Tracking (symbol tracking and frame tracking)</h3></li>
               <p>GScom has developed the symbol synchronization and frame synchronization technologies using a preamble sequence in the acquisition frame, and symbol tracking and frame time tracking using a time Delay Locked Loop (DLL) with the 2^nd order Phase Locked Loop (PLL).</p>
@@ -67,7 +67,7 @@
                 <li>Flat fading rate of 100 dB / sec</li>
                 <li>Output signal level of 20 dBm +/- 3dB.</li>
               </ul>
-              <h4><a href="{{ url_for('whitepaper', whitepaper = 'AGC_Design.pdf') }}" target="_blank">White Paper: Automatic Gain Control Systems Document</a></h4>
+              <h4><a href="{{ url_for('whitepaper', whitepaper = 'AGC Design.pdf') }}" target="_blank">White Paper: Automatic Gain Control Systems Document</a></h4>
 
             <li><h3>ACM (Adaptive Coding and Modulation)</h3></li>
               <p>ACM is a communication technology which is used to maximize the communication system efficiency with a given channel condition.</p>
