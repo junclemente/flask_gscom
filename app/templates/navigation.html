@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-default navbar-fixed-top" id="site_nav">
   <div class="container">
     <div class="navbar-header">
@@ -18,15 +19,28 @@
         <li role="presentation" {% if active_page == 'whitepaper' %} class=" dropdown active" {% else %} class="dropdown" {% endif %}>
           <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">White Papers <span class="caret"></span>
           </a>
-          <ul class="dropdown-menu">
-            <li><a href="{{ url_for('whitepaper', whitepaper = 'AGC_Design.pdf') }}">1. AGC Design</a></li>
-            <li><a href="{{ url_for('whitepaper', whitepaper = 'Broadband_wireless_1024-QAM_Modem.pdf') }}">2. Broadband Wireless Modem</a></li>
-            <li><a href="{{ url_for('whitepaper', whitepaper = 'DFE_and_Carrier_Recovery.pdf') }}">3. DFE and Carrier Recovery</a></li>
-            <li><a href="{{ url_for('whitepaper', whitepaper = 'LDPC_System_Design.pdf') }}">4. LDPC System Design</a></li>
-            <li><a href="{{ url_for('whitepaper', whitepaper = 'Mapper.pdf') }}">5. Mapper</a></li>
-            <li><a href="{{ url_for('whitepaper', whitepaper = 'Project_Budget.pdf') }}">6. Project Budget</a></li>
-            <li><a href="{{ url_for('whitepaper', whitepaper = 'BusinessProposal.pdf') }}">7. Business Proposal</a></li>
-            <li><a href="{{ url_for('whitepaper', whitepaper = 'Business_Development.pdf') }}">8. Business Development</a></li>
+          <ul id="whitePaperContent" class="dropdown-menu">
+            {# Below is the list of White Papers to be added to the navigation bar.
+               Enter the information below in the following format: ( title, filename ).
+               They must be surrounded by parentheses. They must also be entered
+               in the order that you want them to apear in the navigation bar
+               dropdown menu.
+            #}
+            {% set whitepaper_list = [
+                ("AGC Design", "AGC Design.pdf"),
+                ("Broadband Wireless Modem", "Broadband wireless 4096-QAM Modem.pdf"),
+                ("DFE and Carrier Recovery", "DFE and Carrier Recovery.pdf"),
+                ("LDPC System Design", "LDPC System Design.pdf"),
+                ("Mapper", "Mapper.pdf"),
+                ("Project Budget", "Project Budget.pdf"),
+                ("Business Proposal", "Business Proposal.pdf"),
+                ("Business Development", "Business Development.pdf")]
+            %}
+            {% for name, file in whitepaper_list %}
+
+              <li><a href="{{ url_for( 'whitepaper', whitepaper=file ) }}">{{ loop.index }}. {{ name }}</a></li>
+
+            {% endfor %}
           </ul><!-- end dropdown-menu -->
         </li><!-- end DROPDOWN MENU Consulting -->
         <li{% if active_page == 'contact' %} class="active" {% endif %}><a href="{{ url_for('contact') }}">Contact Us</a></li>

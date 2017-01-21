@@ -1,5 +1,2 @@
 *.pyc
-app/static/images/*
-app/static/whitepapers/*.pdf
-*.pdf
 run.py

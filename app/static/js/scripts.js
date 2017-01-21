@@ -1,9 +1,9 @@
 // Carousel
 $('.business-carousel').carousel({
-  interval: 8000;
+  interval: 8000
 })
 
 
-$)'.index-carousel').carousel({
-  interval: 5000;
+$('.index-carousel').carousel({
+  interval: 5000
 })
