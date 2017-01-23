@@ -3,6 +3,15 @@ body {
   background: #fff;
 }
 
+.table {
+  width: 75%;
+}
+
+th, td {
+  text-align: center;
+  vertical-align: middle;
+}
+
 /* ID */
 #business_image_right {
   padding-top: 0px;
