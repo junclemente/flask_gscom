@@ -17,7 +17,7 @@
         <div class="tab-content">
           <div class="tab-pane active" id="tab1">
             <h1>Broadband Access Technology and Modem</h1>
-            <h2>Broadband Wireless 1024-QAM Modem</h2>
+            <h2>Broadband Wireless 4096-QAM Modem</h2>
             <p>The broadband wireless 4096-QAM modem is equipped with a powerful LDPC codec and advanced Decision Feedback Equalizer (DFE) which is combined with a Carrier Tracking Circuit. The modem supports 4-QAM, 16-QAM, 64-QAM, 256-QAM, 1024-QAM, 4096-QAM modulation-rates, and Reed-Solomon code combined with LDPC code rates of 0.5 and 0.75, according to channel conditions. The modem also supports large dynamic range (100dB) Automatic-Gain-Control (AGC), power control, and Adaptive Coding and Modulation (ACM).</p>
             <p>The modem is designed to perform high speed (gigabit per second) data communication with reliable quality in any harsh communication channel environment and to support the usage of any carrier frequency from the cellular band carrier frequency up to the millimeter-wave band carrier frequency (80 GHz). </p>
             <p>Performance testing of the modem shows the modem to be within 1~2 dB away from the theoretical BER curve in the AWGN environment, dependent upon the modulation technology (or modulation format) used.</p>
@@ -102,6 +102,7 @@
                   <li>Parallel pipeline structure for error location search for fast decoding.</li>
                   <li>Achieved an additional 2-4dB coding gain above the achieved LDPC coding gain by using Reed-Solomon (R-S) FEC with RS(255,235,20) format (when used in a cascaded form of the R-S and LDPC codes)</li>
                 </ul>
+                 <h4><a href="{{ url_for('whitepaper', whitepaper = 'Reed-Solomon Codec.pdf') }}" target="_blank">White Paper: Reed-Solomon Codec</a></h4>
               <li><h3>LDPC (Low Density Parity Check) codec</h3></li>
                 <p>LDPC is the one of the most powerful linear block codes in terms of performance (coding gain). LDPC decoding algorithm is inherently parallel which is attractive for high-speed applications.</p>
                 <p>GScom has developed a custom LDPC codec (encoder/decoder) using the following LDPC architecture and technologies:</p>
